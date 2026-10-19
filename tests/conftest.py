@@ -67,7 +67,6 @@ def usuario_auth2(client):
     return headers
 
 
-
 @pytest.fixture
 def admin_auth(client):
     from app.dominios.usuarios.repositorios import UsuarioRepositorio

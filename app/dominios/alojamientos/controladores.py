@@ -53,6 +53,7 @@ def eliminar(usuario_id, alojamiento_id):
     alojamiento_servicio.eliminar(alojamiento_id, usuario_id)
     return "", 204
 
+
 @alojamientos_bp.patch("/<int:alojamiento_id>/comodidades")
 @requiere_token
 def asignar_comodidades(usuario_id, alojamiento_id):

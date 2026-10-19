@@ -3,6 +3,7 @@ from datetime import datetime
 from app import db
 from app.dominios.comodidades.modelos import alojamiento_comodidad
 
+
 class Alojamiento(db.Model):
     __tablename__ = "alojamientos"
 
@@ -16,7 +17,11 @@ class Alojamiento(db.Model):
         db.ForeignKey("usuarios.id"),
         nullable=False,
     )
-    fecha_creacion = db.Column(db.DateTime,default=datetime.utcnow,nullable=False,)
+    fecha_creacion = db.Column(
+        db.DateTime,
+        default=datetime.utcnow,
+        nullable=False,
+    )
 
     usuario = db.relationship(
         "Usuario",
