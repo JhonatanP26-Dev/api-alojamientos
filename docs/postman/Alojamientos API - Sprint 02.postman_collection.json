@@ -1,9 +1,9 @@
 {
   "info": {
-    "_postman_id": "c6116f70-19a4-415b-a133-15054dcc3da7",
+    "_postman_id": "23259d34-951a-4f36-a7e1-81d2919439cd",
     "name": "Alojamientos API - Sprint 02",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "58229495"
+    "_exporter_id": "49595380"
   },
   "item": [
     {
@@ -72,7 +72,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"correo\": \"admin@ejemplo.com\",\r\n  \"contrasena\": \"123456\"\r\n}",
+              "raw": "{\r\n  \"correo\": \"correo-invalido\",\r\n  \"contrasena\": \"123456\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -93,12 +93,7 @@
             }
           },
           "response": []
-        }
-      ]
-    },
-    {
-      "name": "02 - Login",
-      "item": [
+        },
         {
           "name": "POST /api/v1/usuarios/login",
           "request": {
@@ -135,7 +130,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"correo\": \"admin@ejemplo.com\",\r\n  \"contrasena\": \"123456\"\r\n}",
+              "raw": "{\r\n  \"correo\": \"usuario@ejemplo.com\",\r\n  \"contrasena\": \"incorrecta\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -156,12 +151,7 @@
             }
           },
           "response": []
-        }
-      ]
-    },
-    {
-      "name": "03 - Autenticación",
-      "item": [
+        },
         {
           "name": "GET /api/v1/usuarios/perfil",
           "request": {
@@ -206,12 +196,7 @@
             }
           },
           "response": []
-        }
-      ]
-    },
-    {
-      "name": "04 - Autorización",
-      "item": [
+        },
         {
           "name": "GET /api/v1/admin/usuarios",
           "request": {
@@ -219,8 +204,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{token_usuario}}",
-                "disabled": true
+                "value": "Bearer {{token_usuario}}"
               },
               {
                 "key": "Authorization",
@@ -243,6 +227,24 @@
           "response": []
         }
       ]
+    },
+    {
+      "name": "02 - Login",
+      "item": []
+    },
+    {
+      "name": "03 - Autenticación",
+      "item": []
+    },
+    {
+      "name": "04 - Autorización",
+      "item": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "bearer_token_0sph",
+      "secret": true
     }
   ]
 }
