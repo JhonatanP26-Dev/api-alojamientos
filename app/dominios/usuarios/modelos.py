@@ -41,7 +41,10 @@ class PerfilUsuario(db.Model):
         unique=True,
     )
 
-    usuario = db.relationship("Usuario", back_populates="perfil")
+    usuario = db.relationship(
+        "Usuario", 
+        back_populates="perfil"
+        )
 
     def to_dict(self):
         return {

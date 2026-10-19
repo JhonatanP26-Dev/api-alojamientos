@@ -1,9 +1,9 @@
 {
   "info": {
-    "_postman_id": "7548bbed-34f5-41e5-9054-52bfe06ba4dd",
+    "_postman_id": "10593fdb-8a7b-4e24-95e3-156bcc4a9a8f",
     "name": "Alojamientos API - Sprint 01",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "58229495"
+    "_exporter_id": "49595380"
   },
   "item": [
     {
@@ -16,8 +16,7 @@
             "header": [
               {
                 "key": "Origin",
-                "value": "http://localhost:5173",
-                "type": "text"
+                "value": "http://localhost:5173"
               }
             ],
             "url": {
